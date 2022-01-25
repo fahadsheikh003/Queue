@@ -77,6 +77,7 @@ public:
 			{
 				Node* temp = front;
 				front = front->next;
+				front->previous = NULL;
 				delete temp;
 			}
 
